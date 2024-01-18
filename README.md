@@ -2,9 +2,9 @@
 <img src="images/code_blocks.png" alt="drawing" width="159">
 
 <a name="readme-top"></a>
-# Основы программирования на языке Си (часть 2).
+# Основы программирования на языке Си (часть 3).
 <p align="center">
-<img src="images/C.png" alt="drawing" width="350"/>
+<img src="images/C.png" alt="drawing" width="250"/>
 </p>
 
 ### В этом проекте рассмотрены: 
@@ -18,5 +18,6 @@
 ### Файлы: 
 1. Работа с указателем;
 2. Массив-указатель;
+3. Проход массива неопределенной длины;
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
