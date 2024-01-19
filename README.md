@@ -1,5 +1,6 @@
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
 <img src="images/code_blocks.png" alt="drawing" width="159">
+<img src="images/VSC.png" alt="drawing" width="159">
 
 <a name="readme-top"></a>
 # Основы программирования на языке Си (часть 3).
