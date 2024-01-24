@@ -1,4 +1,4 @@
-// 10. Пишем свою функцию на основе malloc()
+// 10. Пишем свою функцию на основе malloc() №1
 
 #include <stdio.h>
 #include <stdlib.h>
