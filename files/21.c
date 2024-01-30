@@ -30,15 +30,8 @@ int main()
     for(unsigned i = 0; i < NUMS; i++)
         printf("%u cpu: model is %s, freq is %u\n", i+1, ptrCpu[i]->model, ptrCpu[i]->freq);
 
-    // Решение домашнего задания:
-    // 1 вариант
-    free(ptrCpu[NUMS]);
-
-    // 2 вариант
-    /*
     for(unsigned i = 0; i < NUMS; i++)
         free(ptrCpu[i]);
-    */
 
     return 0;
 }
