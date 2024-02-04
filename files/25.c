@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define COUNT 3
 
@@ -47,6 +48,8 @@ int main()
 
     while(current)
     {
+        if(*current->model == '\n')
+            *current->model =='\0';
         showNode(current);
         current = current->next;
     }
@@ -71,6 +74,7 @@ void fillNode(struct cpu * ptr, unsigned num)
     printf("Cpu %u of %u\n", num, COUNT);
     puts("Enter cpu model");
     fgets(ptr->model, 15, stdin);
+    *ptr->model = '\0'; // для удаления символа конца строки '\n'
     fflush(stdin);
     puts("Enter cpu freq");
     scanf("%u", &ptr->freq);
@@ -79,7 +83,7 @@ void fillNode(struct cpu * ptr, unsigned num)
 
 void showNode(struct cpu * ptr)
 {
-    printf("Model is %s freq is %u\n", ptr->model, ptr->freq);
+    printf("Model is %s, freq is %u\n", ptr->model, ptr->freq);
 }
 
 
