@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define COUNT 3
 
@@ -71,7 +72,8 @@ void fillNode(struct cpu * ptr, unsigned num)
     printf("Cpu %u of %u\n", num, COUNT);
     puts("Enter cpu model");
     fgets(ptr->model, 15, stdin);
-    *ptr->model = '\0'; // для удаления символа конца строки '\n'
+    // замена "\n" на '\0' с помощью ф-ии strcspn()
+    ptr->model[strcspn(ptr->model, "\n")] = '\0';
     fflush(stdin);
     puts("Enter cpu freq");
     scanf("%u", &ptr->freq);
