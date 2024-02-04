@@ -48,8 +48,6 @@ int main()
 
     while(current)
     {
-        if(*current->model == '\n')
-            *current->model =='\0';
         showNode(current);
         current = current->next;
     }
