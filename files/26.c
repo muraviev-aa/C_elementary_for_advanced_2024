@@ -1,4 +1,4 @@
-// 25. Создаем связный список №2
+// 26. Создаем связный список №3
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -72,8 +72,14 @@ void fillNode(struct cpu * ptr, unsigned num)
     printf("Cpu %u of %u\n", num, COUNT);
     puts("Enter cpu model");
     fgets(ptr->model, 15, stdin);
-    // замена "\n" на '\0' с помощью ф-ии strcspn()
-    ptr->model[strcspn(ptr->model, "\n")] = '\0';
+
+    // замена '\n' на '\0' после использования ф-ии fgets()
+    unsigned i = 0;
+    while(ptr->model[i] != '\n')
+        i++;
+    if(ptr->model[i] == '\n')
+        ptr->model[i] = '\0';
+
     fflush(stdin);
     puts("Enter cpu freq");
     scanf("%u", &ptr->freq);
