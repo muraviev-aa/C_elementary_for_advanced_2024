@@ -1,8 +1,8 @@
 // 27. Создаем однонаправленный связный список №4
 
 #include <stdio.h>
-#include <conio.h> // SetConsoleCP(), SetConsoleOutputCP()
-#include <windows.h>
+#include <conio.h>
+#include <windows.h> // SetConsoleCP(), SetConsoleOutputCP()
 
 struct cpu
 {

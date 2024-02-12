@@ -2,8 +2,8 @@
 // В коде файла 27 делаю замену функции fgets() на myFgets()
 
 #include <stdio.h>
-#include <conio.h> // SetConsoleCP(), SetConsoleOutputCP()
-#include <windows.h>
+#include <conio.h>
+#include <windows.h> // SetConsoleCP(), SetConsoleOutputCP()
 
 #define NUMMODEL 15
 #define NUMFREQ 11
