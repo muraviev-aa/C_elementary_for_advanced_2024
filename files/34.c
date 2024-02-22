@@ -14,6 +14,7 @@ int main()
     // выполняет форматированный вывод в поток
     fprintf(fptr, "%s%d", str, num);
     fprintf(stdout, "%s%d", str, num);
+    fclose(fptr);
 
     return 0;
 }

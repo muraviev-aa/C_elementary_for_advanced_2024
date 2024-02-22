@@ -15,5 +15,6 @@ int main()
     fputc(067, fptr);  // номер ASCII в 8-й системе
     fputc(55, fptr);   // номер ASCII в 10-тичной
     fputc(0x37, fptr); // номер ASCII в 16-ой системе
+    fclose(fptr);
     return 0;
 }
